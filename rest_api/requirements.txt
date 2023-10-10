@@ -1,0 +1,6 @@
+pycamunda==0.6.1
+stripe~=6.7.0
+fastapi==0.103.2
+web3==6.10.0
+uvicorn==0.23.2
+pydantic-settings==2.0.3

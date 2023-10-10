@@ -1,0 +1,312 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_id",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_category",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_key",
+				"type": "string"
+			},
+			{
+				"internalType": "int256",
+				"name": "_version",
+				"type": "int256"
+			},
+			{
+				"internalType": "string",
+				"name": "_resourceName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_deploymentId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_diagramResourceName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_tenantId",
+				"type": "string"
+			},
+			{
+				"internalType": "int256",
+				"name": "_historyTimeToLive",
+				"type": "int256"
+			},
+			{
+				"internalType": "string",
+				"name": "_description",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "_hasStartFormKey",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "_isSuspended",
+				"type": "bool"
+			},
+			{
+				"internalType": "string",
+				"name": "_versionTag",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "_isStartableInTasklist",
+				"type": "bool"
+			}
+		],
+		"name": "addProcessDefinition",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_id",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_processInstanceId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_tenantId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_processDefinitionId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_businessKey",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_rootProcessInstanceId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_caseInstanceId",
+				"type": "string"
+			}
+		],
+		"name": "addProcessInstance",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_processInstanceId",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "_isEnded",
+				"type": "bool"
+			}
+		],
+		"name": "setIsEnded",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_processInstanceId",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "_isSuspended",
+				"type": "bool"
+			}
+		],
+		"name": "setIsSuspended",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "processDefinitions",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "id",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "category",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "key",
+				"type": "string"
+			},
+			{
+				"internalType": "int256",
+				"name": "version",
+				"type": "int256"
+			},
+			{
+				"internalType": "string",
+				"name": "resourceName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "deploymentId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "diagramResourceName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "tenantId",
+				"type": "string"
+			},
+			{
+				"internalType": "int256",
+				"name": "historyTimeToLive",
+				"type": "int256"
+			},
+			{
+				"internalType": "string",
+				"name": "description",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "hasStartFormKey",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "isSuspended",
+				"type": "bool"
+			},
+			{
+				"internalType": "string",
+				"name": "versionTag",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "isStartableInTasklist",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "processInstances",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "id",
+				"type": "string"
+			},
+			{
+				"internalType": "bool",
+				"name": "isSuspended",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "isEnded",
+				"type": "bool"
+			},
+			{
+				"internalType": "string",
+				"name": "processInstanceId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "tenantId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "processDefinitionId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "businessKey",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "rootProcessInstanceId",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "caseInstanceId",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
